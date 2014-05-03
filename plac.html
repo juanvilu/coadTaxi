@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="css/watable.css"/>
+<script src="js/watable.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function() {
+
+        $("#tabla").WATable(
+                {
+                    url: "datos.php",
+                    preFill: true,
+                    filter: true,
+                    columnPicker: true,
+                    pageSizes: [],
+                    types: {
+                        date: {
+                            format: "yyyy/dd/MM",
+                            datePicker: true,
+                            utc: true
+                        }
+                    }
+                });
+
+    });
+</script>
+
+<div id="tabla" style="margin-top: 15px;" ></div>

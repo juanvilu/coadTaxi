@@ -1,0 +1,97 @@
+        <script>
+            $(document).ready(function() {
+
+ 		$(".tip").tooltip({
+                    placement: "bottom"
+                });
+
+                $('.popover-link').popover({
+                    placement: "top",
+                    html: true,
+                });
+                $(':not(#anything)').on('click', function(e) {
+                    $('.popover-link').each(function() {
+                        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                            $(this).popover('hide');
+                            return;
+                        }
+                    });
+                });
+            });
+        </script>
+        <style type="text/css">
+            #sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+            #sortable li { background:  url("img/itaxi.png") no-repeat; margin: 10px 8px; padding: 15px 0px 0px 0px; float: left; width: 55px; height: 40px; font-size: 0.9em; text-align: center; }
+            .popover-link { cursor:pointer; cursor: hand}
+            .aserv {cursor: w-resize}
+        </style>
+
+                    <ul id="sortable">
+                        <li id="M988" class="aserv" style="background-color:#51a351;">M988</li>
+                        <li id="M987" class="aserv" style="background-color:#51a351;">M987</li>
+                        <li id="M986" class="aserv" style="background-color:#51a351;">M986</li>
+                        <li id="M985" class="aserv" style="background-color:#51a351;">M985</li>
+                        <li id="M984" class="aserv" style="background-color:#51a351;">M984</li>
+                        <li id="M983" class="aserv" style="background-color:#51a351;">M983</li>
+                        <li id="M982" class="aserv" style="background-color:#51a351;">M982</li>
+                        <li id="M981" class="aserv" style="background-color:#51a351;">M981</li>
+                        <li id="M980" class="aserv" style="background-color:#51a351;">M980</li>
+                        <li id="M980" class="aserv" style="background-color:#51a351;">M998</li>
+                        <li id="M980" class=" aserv" style="background-color:#51a351;">M998</li>
+                        <li id="M980" class="aserv " style="background-color:#51a351;">M998</li>
+                        <li id="M980" class="aserv " style="background-color:#51a351;">M998</li>
+                        <li id="M980" class="aserv " style="background-color:#51a351;">M998</li>
+                        <li id="M980" class="aserv " style="background-color:#51a351;">M998</li>
+                        <li class="aserv " style="background-color:#51a351;">M998</li>
+                        <li class="aserv " style="background-color:#51a351;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M997</li>
+                        <li class="aserv " style="background-color:#24748c;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M997</li>
+                        <li class="aserv" style="background-color:#24748c;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M997</li>
+                        <li class="aserv " style="background-color:#24748c;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M997</li>
+                        <li class="aserv " style="background-color:#24748c;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M997</li>
+                        <li class="aserv " style="background-color:#24748c;">M998</li>
+                        <li class="aserv " style="background-color:#24748c;">M997</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+                        <li id="M980" class="popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="DE: un lado  <br> A: otro" style="background-color:#da4f49;">M999</li>
+
+                        <li class="  popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="Servicio" style="background-color:#000000;">M002</li>
+                        <li class="  popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="Mecanico" style="background-color:#000000;">M002</li>
+                        <li class="  popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="Mecanico" style="background-color:#000000;">M002</li>
+                        <li class="  popover-link" data-content='Estatus: <button type="button" class="btn btn-success btn-mini"><i class="icon-pause"></i></button> <button type="button" class="btn btn-info btn-mini"><i class="icon-play"></i></button> <button type="button" class="btn btn-inverse btn-mini"><i class="icon-ban-circle"></i></button> ' title="Servicio" style="background-color:#000000;">M002</li>
+                        
+                    </ul>
+                     <div class="tooltip">
+                        <div class="tooltip-inner">
+                            Tooltip!
+                        </div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
